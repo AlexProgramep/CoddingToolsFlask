@@ -1,0 +1,79 @@
+{% extends 'template.html' %}
+
+{% block title %}
+Версии
+{% endblock %}
+
+{% block body %}
+<div>
+<table class="table table-dark" align="center">
+    <tr>
+        <td></td>
+        <td><h4>Стабильные версии</h4></td>
+        <td><h4>Последние версии</h4></td>
+        <td><h4>Ссылка</h4></td>
+        <tr><td colspan="4"><h4 style="text-align: center">Языки</h4></td></tr>
+    <tr><td><h4>Python</h4></td>
+    <td><h4>{{ stability_version[0] }}</h4></td>
+    <td><h4>{{ last_version[0] }}</h4></td></td>
+    <td><a href="https://www.python.org/">Python</a></td>
+    </tr>
+        <tr><td><h4>PHP</h4>
+            <td><h4>{{ stability_version[1] }}</h4></td>
+            <td><h4>{{ last_version[1] }}</h4></td>
+            <td><a href="https://www.php.net/">PHP</a></td></tr>
+            <td><h4>C#</h4> </td>
+            <td><h4>{{ stability_version[2] }}</h4></td>
+            <td><h4>{{ last_version[2] }}</h4></td>
+            <td><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">С#</a></td></tr>
+        <tr><td><h4>C++</h4> </td>
+            <td><h4>{{ stability_version[3] }}</h4></td>
+            <td><h4>{{ last_version[3] }}</h4></td>
+            <td><a href=https://isocpp.org/"">C++</a></td></tr>
+        <tr><td><h4>Lua</h4></td>
+            <td><h4>{{ stability_version[4] }}</h4></td>
+            <td><h4>{{ last_version[4] }}</h4></td>
+            <td><a href="https://www.lua.org/">Lua</a></td></tr>
+        <tr><td><h4>Java</h4></td>
+            <td><h4>{{ stability_version[5] }}</h4></td>
+            <td><h4>{{ last_version[5] }}</h4></td>
+            <td><a href="https://www.oracle.com/java/">Java</a></td></tr>
+        <tr><td><h4>JS</h4> </td>
+            <td><h4>{{ stability_version[6] }}</h4></td>
+            <td><h4>{{ last_version[6] }}</h4></td>
+            <td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JS</a></td></tr>
+        <tr><td><h4>Swift</h4> </td>
+            <td><h4>{{ stability_version[7] }}</h4></td>
+            <td><h4>{{ last_version[7] }}</h4></td>
+            <td><a href="https://swift.org/">Swift</a></td></tr>
+        <tr><td><h4>Kotlin</h4></td>
+            <td><h4>{{ stability_version[8] }}</h4></td>
+            <td><h4>{{ last_version[8] }}</h4></td>
+            <td><a href="https://kotlinlang.org/">Kotlin</a></td></tr>
+        <tr><td><h4>GO</h4></td>
+            <td><h4>{{ stability_version[9] }}</h4></td>
+            <td><h4>{{ last_version[9] }}</h4></td>
+            <td><a href="https://golang.org/">GO</a></td></tr>
+        <tr><td><h4>Ruby</h4></td>
+            <td><h4>{{ stability_version[10] }}</h4></td>
+            <td><h4>{{ last_version[10] }}</h4></td>
+            <td><a href="https://www.ruby-lang.org/ru/">Ruby</a></td></tr>
+        <tr><td colspan="4"><h4 style="text-align: center">Фреймворки,библиотеки и веб-платформы</h4></td></tr>
+        <tr><td><h4>Node.js</h4></td>
+            <td><h4>{{ stability_version[11] }}</h4></td>
+            <td><h4>{{ last_version[11] }}</h4></td>
+            <td><a href="https://nodejs.org/">Node.js</a></td></tr>
+        <tr><td colspan="4"><h4 style="text-align: center">Игровые движки и платформы</h4></td></tr>
+        <tr><td><h4>UE</h4>
+            <td><h4>{{ stability_version[12] }}</h4></td>
+            <td><h4>{{ last_version[12] }}</h4></td>
+            <td><a href="https://www.unrealengine.com/">UE</a></td></tr>
+        <tr><td><h4>Unity</h4>
+            <td><h4>{{ stability_version[13] }}</h4></td>
+            <td><h4>{{ last_version[13] }}</h4></td>
+            <td><a href="https://unity.com/">Unity</a></td></tr>
+    </tr>
+</table>
+</div>
+    <h4>В стабильных версиях возможны неточности. Будьте внимательны!</h4>
+{% endblock %}
